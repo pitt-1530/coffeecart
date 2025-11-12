@@ -1,10 +1,5 @@
 package nvf.coffeecart;
 
-/**
- * Hello world!
- *
- */
-
 public class App {
     public static String brew() {
         return "Coffee is brewing";
