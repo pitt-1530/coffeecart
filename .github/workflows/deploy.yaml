@@ -37,8 +37,10 @@ jobs:
 
       - name: Prepare static site
         run: |
-          mkdir publish
-          cp -r site/* publish/
+          mkdir -p publish
+          cp -R site/* publish/
+          echo "Content of publish:"
+          ls -R publish
 
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
